@@ -14,7 +14,3 @@ class AboutViewSet(viewsets.ViewSet):
 
         serializer = AboutSerializer(data, many=True)
         return Response({'message': serializer.data}, status=status.HTTP_200_OK)
-
-
-
-
